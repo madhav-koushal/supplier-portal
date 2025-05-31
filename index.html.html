@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supplier Portal</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 0; }
+    .navbar { background-color: #007b5e; color: white; padding: 1rem; text-align: center; font-size: 1.3rem; }
+    .container { max-width: 900px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 8px; }
+    .box { background: #e9f9f2; padding: 1rem; margin-bottom: 2rem; border-radius: 6px; border: 1px solid #b2d8c2; }
+    input, textarea, select, button { width: 100%; padding: 0.6rem; margin-top: 0.5rem; border-radius: 4px; border: 1px solid #ccc; }
+    button { background-color: #007b5e; color: white; border: none; margin-top: 1rem; cursor: pointer; }
+    button:hover { background-color: #005f46; }
+  </style>
+</head>
+<body>
+  <div class="navbar">Supplier/Vendor Portal</div>
+  <div class="container">
+    <div class="box">
+      <h3>1. Registration & KYC</h3>
+      <input type="text" placeholder="Company Name">
+      <input type="email" placeholder="Email">
+      <input type="text" placeholder="Mobile Number">
+      <input type="text" placeholder="GST Number">
+      <input type="text" placeholder="Bank Details">
+      <input type="file">
+      <button onclick="alert('OTP sent for verification')">Submit & Get OTP</button>
+    </div>
+    <div class="box">
+      <h3>2. OTP Verification</h3>
+      <input type="text" placeholder="Enter OTP">
+      <button onclick="alert('OTP Verified')">Verify</button>
+    </div>
+    <div class="box">
+      <h3>3. View & Accept PO</h3>
+      <select><option>PO-1001</option></select>
+      <button onclick="alert('PO Accepted')">Accept PO</button>
+    </div>
+    <div class="box">
+      <h3>4. Submit Delivery Plan</h3>
+      <textarea placeholder="Enter delivery plan (date-wise)"></textarea>
+      <button onclick="alert('Delivery Plan Submitted')">Submit</button>
+    </div>
+    <div class="box">
+      <h3>5. Dispatch Entry</h3>
+      <input type="date" placeholder="Dispatch Date">
+      <input type="text" placeholder="LR Number">
+      <input type="text" placeholder="Transporter Name">
+      <button onclick="alert('Dispatch Submitted')">Submit Dispatch</button>
+    </div>
+  </div>
+</body>
+</html>
